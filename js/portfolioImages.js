@@ -40,7 +40,7 @@ for (let i = 0; i < imageCount; i++) {
         container.className = 'image-container';
 
         const img = document.createElement('img');
-        img.src = `../images/portfolioImages/${i}.png`; // Image source
+        img.src = `./images/portfolioImages/${i}.png`; // Image source
         img.alt = `Image ${i}`;
         container.appendChild(img);
 
@@ -54,7 +54,7 @@ for (let i = 0; i < imageCount; i++) {
         gallery.appendChild(container);
     } else {
         const img = document.createElement('img');
-        img.src = `../images/portfolioImages/${i}.png`; // Image source
+        img.src = `./images/portfolioImages/${i}.png`; // Image source
         img.alt = `Image ${i}`;
         img.className = 'gallery-image'; // Add class for lightbox
         gallery.appendChild(img);

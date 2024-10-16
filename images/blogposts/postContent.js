@@ -1,7 +1,7 @@
 const loadPost = async (postId) => {
     try {
         // Import the specific post.js file based on the postId
-        const post = await import(`../blogposts/posts/${postId}/post.js`);
+        const post = await import(`./blogposts/posts/${postId}/post.js`);
         const postContentDiv = document.getElementById('post-content');
         const introContainerDiv = document.querySelector('.intro-container');
 
@@ -64,7 +64,7 @@ const loadPost = async (postId) => {
                         contDiv.className = 'CONT_1'; // Add the cont_1 class
                         
                         if (contentValue.IMG) {
-                            const mediaSrc = `../images/blogposts/posts/${postId}/media/${contentValue.IMG}`;
+                            const mediaSrc = `./images/blogposts/posts/${postId}/media/${contentValue.IMG}`;
                             const mediaTag = document.createElement('img');
                             
                             mediaTag.src = mediaSrc;

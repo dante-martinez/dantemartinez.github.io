@@ -1,62 +1,62 @@
 const categorizedSkills = {
     "Visual Design": [
-        { title: '3D Graphics', icon: '../images/home/skills__software/3d-graphics.png', startDate: new Date('2019-04-01') },
-        { title: '2D Graphics/Illustrations', icon: '../images/home/skills__software/2d-graphics.png', startDate: new Date('2021-02-01') },
-        { title: 'Photography', icon: '../images/home/skills__software/photography.png', startDate: new Date('2021-01-01') },
-        { title: 'Video Editing', icon: '../images/home/skills__software/video-editing.png', startDate: new Date('2018-02-01') },
-        { title: '3D Modelling', icon: '../images/home/skills__software/3d-modelling.png', startDate: new Date('2021-06-01') },
-        { title: 'Texture Design', icon: '../images/home/skills__software/texture-design.png', startDate: new Date('2020-07-01') },
-        { title: 'UI/UX Design', icon: '../images/home/skills__software/ui-design.png', startDate: new Date('2024-08-01') },
-        { title: 'VFX (Videogames)', icon: '../images/home/skills__software/vfx.png', startDate: new Date('2023-07-01') },
-        { title: 'Animation', icon: '../images/home/skills__software/animation.png', startDate: new Date('2022-08-01') },
-        { title: 'Concept Art', icon: '../images/home/skills__software/concept-art.png', startDate: new Date('2024-07-01') }
+        { title: '3D Graphics', icon: './images/home/skills__software/3d-graphics.png', startDate: new Date('2019-04-01') },
+        { title: '2D Graphics/Illustrations', icon: './images/home/skills__software/2d-graphics.png', startDate: new Date('2021-02-01') },
+        { title: 'Photography', icon: './images/home/skills__software/photography.png', startDate: new Date('2021-01-01') },
+        { title: 'Video Editing', icon: './images/home/skills__software/video-editing.png', startDate: new Date('2018-02-01') },
+        { title: '3D Modelling', icon: './images/home/skills__software/3d-modelling.png', startDate: new Date('2021-06-01') },
+        { title: 'Texture Design', icon: './images/home/skills__software/texture-design.png', startDate: new Date('2020-07-01') },
+        { title: 'UI/UX Design', icon: './images/home/skills__software/ui-design.png', startDate: new Date('2024-08-01') },
+        { title: 'VFX (Videogames)', icon: './images/home/skills__software/vfx.png', startDate: new Date('2023-07-01') },
+        { title: 'Animation', icon: './images/home/skills__software/animation.png', startDate: new Date('2022-08-01') },
+        { title: 'Concept Art', icon: './images/home/skills__software/concept-art.png', startDate: new Date('2024-07-01') }
     ],
     "Development": [
-        { title: 'Project Management', icon: '../images/home/skills__software/project-management.png', startDate: new Date('2020-07-01') },
-        { title: 'Game Development', icon: '../images/home/skills__software/game-development.png', startDate: new Date('2019-04-01') },
-        { title: 'App Development', icon: '../images/home/skills__software/app-development.png', startDate: new Date('2021-04-01') },
-        { title: 'Web Development', icon: '../images/home/skills__software/web-development.png', startDate: new Date('2024-08-29') }
+        { title: 'Project Management', icon: './images/home/skills__software/project-management.png', startDate: new Date('2020-07-01') },
+        { title: 'Game Development', icon: './images/home/skills__software/game-development.png', startDate: new Date('2019-04-01') },
+        { title: 'App Development', icon: './images/home/skills__software/app-development.png', startDate: new Date('2021-04-01') },
+        { title: 'Web Development', icon: './images/home/skills__software/web-development.png', startDate: new Date('2024-08-29') }
     ],
     "Programming Languages": [
-        { title: 'Lua', icon: '../images/home/skills__software/lua.png', startDate: new Date('2022-02-01') },
-        { title: 'Python', icon: '../images/home/skills__software/python.png', startDate: new Date('2022-04-01') },
-        { title: 'Java', icon: '../images/home/skills__software/java.png', startDate: new Date('2024-08-29') },
-        { title: 'HTML', icon: '../images/home/skills__software/html.png', startDate: new Date('2024-08-29') },
-        { title: 'CSS', icon: '../images/home/skills__software/css.png', startDate: new Date('2024-08-29') }
+        { title: 'Lua', icon: './images/home/skills__software/lua.png', startDate: new Date('2022-02-01') },
+        { title: 'Python', icon: './images/home/skills__software/python.png', startDate: new Date('2022-04-01') },
+        { title: 'Java', icon: './images/home/skills__software/java.png', startDate: new Date('2024-08-29') },
+        { title: 'HTML', icon: './images/home/skills__software/html.png', startDate: new Date('2024-08-29') },
+        { title: 'CSS', icon: './images/home/skills__software/css.png', startDate: new Date('2024-08-29') }
     ],
     "Marketing": [
-        { title: 'Social Media Marketing', icon: '../images/home/skills__software/social-media-marketing.png', startDate: new Date('2023-06-01') },
-        { title: 'Advertising', icon: '../images/home/skills__software/writing.png', startDate: new Date('2017-01-01') }
+        { title: 'Social Media Marketing', icon: './images/home/skills__software/social-media-marketing.png', startDate: new Date('2023-06-01') },
+        { title: 'Advertising', icon: './images/home/skills__software/writing.png', startDate: new Date('2017-01-01') }
     ],
     "Languages": [
-        { title: 'English', icon: '../images/home/skills__software/english.png', hoverText: 'Fluent' },
-        { title: 'Spanish', icon: '../images/home/skills__software/spanish.png', hoverText: 'Fluent' },
-        { title: 'French', icon: '../images/home/skills__software/french.png', hoverText: 'Learning' } 
+        { title: 'English', icon: './images/home/skills__software/english.png', hoverText: 'Fluent' },
+        { title: 'Spanish', icon: './images/home/skills__software/spanish.png', hoverText: 'Fluent' },
+        { title: 'French', icon: './images/home/skills__software/french.png', hoverText: 'Learning' } 
     ]
 };
 
 const categorizedSoftware = {
     "Multimedia": [
-        { title: 'Adobe Photoshop', icon: '../images/home/skills__software/photoshop.png', startDate: new Date('2019-09-01') },
-        { title: 'Adobe Illustrator', icon: '../images/home/skills__software/illustrator.png', startDate: new Date('2022-01-01') },
-        { title: 'Adobe Substance Painter', icon: '../images/home/skills__software/substance-painter.png', startDate: new Date('2020-05-01') },
-        { title: 'Adobe XD', icon: '../images/home/skills__software/xd.png', startDate: new Date('2024-03-01') },
-        { title: 'Paint.net', icon: '../images/home/skills__software/paint-net.png', startDate: new Date('2019-04-01') },
-        { title: 'Adobe Premiere Pro', icon: '../images/home/skills__software/premiere-pro.png', startDate: new Date('2022-01-01') },
-        { title: 'Adobe Lightroom', icon: '../images/home/skills__software/lightroom.png', startDate: new Date('2020-02-01') }
+        { title: 'Adobe Photoshop', icon: './images/home/skills__software/photoshop.png', startDate: new Date('2019-09-01') },
+        { title: 'Adobe Illustrator', icon: './images/home/skills__software/illustrator.png', startDate: new Date('2022-01-01') },
+        { title: 'Adobe Substance Painter', icon: './images/home/skills__software/substance-painter.png', startDate: new Date('2020-05-01') },
+        { title: 'Adobe XD', icon: './images/home/skills__software/xd.png', startDate: new Date('2024-03-01') },
+        { title: 'Paint.net', icon: './images/home/skills__software/paint-net.png', startDate: new Date('2019-04-01') },
+        { title: 'Adobe Premiere Pro', icon: './images/home/skills__software/premiere-pro.png', startDate: new Date('2022-01-01') },
+        { title: 'Adobe Lightroom', icon: './images/home/skills__software/lightroom.png', startDate: new Date('2020-02-01') }
     ],
     "Development Software": [
-        { title: 'Roblox Studio', icon: '../images/home/skills__software/roblox-studio.png', startDate: new Date('2019-02-01') },
-        { title: 'Blender', icon: '../images/home/skills__software/blender.png', startDate: new Date('2019-04-01') },
-        { title: 'Visual Studio Code', icon: '../images/home/skills__software/vscode.png', startDate: new Date('2022-04-01') }
+        { title: 'Roblox Studio', icon: './images/home/skills__software/roblox-studio.png', startDate: new Date('2019-02-01') },
+        { title: 'Blender', icon: './images/home/skills__software/blender.png', startDate: new Date('2019-04-01') },
+        { title: 'Visual Studio Code', icon: './images/home/skills__software/vscode.png', startDate: new Date('2022-04-01') }
     ],
     "Other": [
-        { title: 'Jira', icon: '../images/home/skills__software/jira.png', startDate: new Date('2024-07-01') },
-        { title: 'Confluence', icon: '../images/home/skills__software/confluence.png', startDate: new Date('2024-07-01') },
-        { title: 'Trello', icon: '../images/home/skills__software/trello.png', startDate: new Date('2022-07-01') },
-        { title: 'Pureref', icon: '../images/home/skills__software/pureref.png', startDate: new Date('2023-03-01') },
-        { title: 'Audacity', icon: '../images/home/skills__software/audacity.png', startDate: new Date('2024-07-01') },
-        { title: 'Acrobat', icon: '../images/home/skills__software/acrobat.png', startDate: new Date('2024-04-01') }
+        { title: 'Jira', icon: './images/home/skills__software/jira.png', startDate: new Date('2024-07-01') },
+        { title: 'Confluence', icon: './images/home/skills__software/confluence.png', startDate: new Date('2024-07-01') },
+        { title: 'Trello', icon: './images/home/skills__software/trello.png', startDate: new Date('2022-07-01') },
+        { title: 'Pureref', icon: './images/home/skills__software/pureref.png', startDate: new Date('2023-03-01') },
+        { title: 'Audacity', icon: './images/home/skills__software/audacity.png', startDate: new Date('2024-07-01') },
+        { title: 'Acrobat', icon: './images/home/skills__software/acrobat.png', startDate: new Date('2024-04-01') }
     ]
 };
 
@@ -201,6 +201,6 @@ document.addEventListener('DOMContentLoaded', function () {
     populateCategorizedList(categorizedSkills, 'skills-list');
 
     populateCategorizedList(categorizedSoftware, 'software-list');
-    highlightLastItemOnExpand('skills-list'); // 'skills-list' should be the ID of your row container
+    //highlightLastItemOnExpand('skills-list'); // 'skills-list' should be the ID of your row container
 
 });

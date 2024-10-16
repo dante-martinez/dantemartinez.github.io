@@ -1,20 +1,20 @@
 const tags = {
-    "3D GRAPHICS": '../images/home/skills__software/3d-graphics.png',
-    "2D GRAPHICS": '../images/home/skills__software/2d-graphics.png',
-    "UI/UX": '../images/home/skills__software/app-development.png',
-    "MODELING": '../images/home/skills__software/3d-modelling.png',
-    "TEXTURING": '../images/home/skills__software/texture-design.png',
-    "PROGRAMMING": '../images/home/skills__software/game-development.png',
+    "3D GRAPHICS": './images/home/skills__software/3d-graphics.png',
+    "2D GRAPHICS": './images/home/skills__software/2d-graphics.png',
+    "UI/UX": './images/home/skills__software/app-development.png',
+    "MODELING": './images/home/skills__software/3d-modelling.png',
+    "TEXTURING": './images/home/skills__software/texture-design.png',
+    "PROGRAMMING": './images/home/skills__software/game-development.png',
 };
 
 const additionalTags = {
-    "PHOTOGRAPHY": '../images/home/skills__software/photography.png',
-    "ANIMATION": '../images/home/skills__software/animation.png',
-    "VIDEO EDITING": '../images/home/skills__software/video-editing.png',
-    "CONCEPT ART": '../images/home/skills__software/concept-art.png',
-    "VFX": '../images/home/skills__software/VFX.png',
-    "ROBLOX CLOTHING": '../images/home/skills__software/roblox-clothing.png',
-    "OTHER": '../images/home/skills__software/other.png'
+    "PHOTOGRAPHY": './images/home/skills__software/photography.png',
+    "ANIMATION": './images/home/skills__software/animation.png',
+    "VIDEO EDITING": './images/home/skills__software/video-editing.png',
+    "CONCEPT ART": './images/home/skills__software/concept-art.png',
+    "VFX": './images/home/skills__software/VFX.png',
+    "ROBLOX CLOTHING": './images/home/skills__software/roblox-clothing.png',
+    "OTHER": './images/home/skills__software/other.png'
 };
 
 // Combine tags and additionalTags
@@ -34,7 +34,7 @@ async function loadBlogPosts(searchTerm = '', tagFilter = []) {
 
     // Load posts
     for (let postIndex = 1; postIndex <= numberOfPosts; postIndex++) {
-        const postModule = await import(`../blogposts/posts/${postIndex}/post.js`);
+        const postModule = await import(`./blogposts/posts/${postIndex}/post.js`);
         posts.push(postModule.default.BlogPostThumbnail);
     }
 
@@ -81,7 +81,7 @@ function displayPosts(postsChunk) {
         // Image container
         const imageContainer = document.createElement('div');
         imageContainer.classList.add('blog-post-image');
-        imageContainer.style.backgroundImage = `url(../images/blogposts/posts/${index + 1}/media/${post.thumbnail})`;
+        imageContainer.style.backgroundImage = `url(./images/blogposts/posts/${index + 1}/media/${post.thumbnail})`;
         imageContainer.style.backgroundSize = 'cover';
         imageContainer.style.backgroundPosition = 'center';
         imageContainer.style.height = '70%';
