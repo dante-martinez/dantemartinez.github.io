@@ -1,0 +1,603 @@
+@font-face {
+    font-family: 'Gothic Bold';
+    src: url('../fonts/centurygothic_bold.ttf');
+}
+
+@font-face {
+    font-family: 'Gothic';
+    src: url('../fonts/centurygothic.ttf');
+}
+
+
+
+/* Comment */
+
+#current {
+    font-family: "Gothic Bold";
+}
+
+/* HTML and Body */
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: #1c1c1c;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    min-height:100%;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Gothic', sans-serif ;
+
+}
+
+/* General Header Styles */
+header {
+    width: 100%;
+    height: 6rem;
+
+    background-color: #752b2b;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center content horizontally */
+    text-align: center;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    width: 100%; /* Ensure the content takes up full width */
+    box-sizing: border-box;
+}
+
+.header-content a {
+    font-size: 1.6rem;
+}
+
+.Bans {
+    font-size: 1.6rem;
+    font-weight: normal;
+    text-align: center;
+}
+
+.logo img {
+    width: 5rem;
+    height: auto;
+}
+
+/* PAGINATION */
+.pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #232323;
+}
+
+.page-btn {
+    background-color: #252525;
+    color: #ffffff;
+    width: 4rem;
+    height: 4rem;
+    justify-content: center;
+    align-items: center;
+    
+    margin: 1rem .5rem 1rem .5rem;
+    border: 0.1rem solid #444;
+    border-radius: 0.4rem;
+    
+    cursor: pointer;
+    padding: 0; /* Remove padding since width and height are fixed */
+}
+
+.icon {
+    width: 2.2rem;
+    height: 2.2rem;
+}
+
+.page-btn:hover {
+    background-color: #555;
+}
+
+.page-btn.active {
+    background-color: #4287f5;
+    font-weight: bold;
+}
+
+.page-btn:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+}
+  
+
+/* Wrapper Styling */
+.wrapper {
+    background-color: #1c1c1c;
+    padding: 2rem;
+    box-sizing: border-box;
+    text-align: center;
+    width: 100%; /* Ensure the wrapper covers the full width */
+    
+    overflow-x: hidden; /* Prevent horizontal overflow */
+}
+
+/* Dropdown styles */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #232324;
+    min-width: 20rem;
+    box-shadow: 0px 0.8rem 1.6rem 0px rgba(0,0,0,0.5);
+    z-index: 1;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 1rem;
+    text-decoration: none;
+    display: flex; /* Ensure horizontal alignment */
+    align-items: center; /* Vertically center content */
+    text-align: left;
+    white-space: nowrap; /* Prevent text wrapping */
+}
+
+.dropdown-content a img {
+    height: 2rem; /* Adjust the height of the icon */
+    width: auto;  /* Maintain aspect ratio */
+    margin-right: 1rem; /* Space between image and text */
+    flex-shrink: 0; /* Prevent the image from shrinking */
+}
+
+.dropdown-content a:hover {
+    color: #ddd; /* Text color changes on hover */
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+#current {
+    font-family: "Gothic Bold";
+}
+
+
+
+/* Container for search input and icon */
+.search-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-top: 1rem;
+}
+
+/* Style for the search input */
+#search-bar {
+    width: 100%;
+    padding: 0.75rem;
+    padding-left: 3rem; /* Adds space for the icon */
+    font-size: 1rem;
+    border: 1px solid #444;
+    border-radius: .7rem;
+    background-color: #232323;
+    outline: none;
+}
+
+/* Style for the FontAwesome search icon */
+.search-icon {
+    position: absolute;
+    left: 0.75rem;
+    font-size: 1.5rem;
+    color: #FFFFFF;
+    cursor: pointer;
+    transition: color 0.15s ease;
+}
+#search-bar::placeholder {
+    color: #ffffff; /* This changes the placeholder text color to white */
+}
+
+#search-bar {
+    font-size: 1.6rem;
+    font-family: "Gothic";
+    color: #ffffff; /* This changes the placeholder text color to white */
+}
+
+
+
+/* Change text color on hover as well */
+#search-bar:hover {
+    background-color: #2e2e2e; /* Changes the search input text color on hover */
+}
+
+/* Keep placeholder styling the same on click */
+#search-bar:focus::placeholder {
+    color: transparent; /* Hides the placeholder as soon as the input is clicked */
+}
+
+
+
+
+
+
+
+/* To ensure the tag container looks good below the search input */
+#tag-container {
+    margin-top: 1rem;
+}
+
+
+
+
+
+/* Divider Bar Styles */
+.divider1 {
+    border-top: 0.3rem solid #782c2c; /* Color and thickness of the line */
+    margin: 0px auto; /* Center the divider with auto margins */
+    width: 100%; /* Set the width to 10% */
+    display: block; /* Ensures the bar is a block element */
+    position: relative; /* Allows for positioning if needed */
+
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+
+/* blogpost temp */
+/* Post container styling */
+
+#post-container {
+    display: grid;
+    column-gap: 1rem;
+    row-gap: 1rem;
+    grid-template-columns: repeat(3, 1fr);
+
+
+}
+.blog-post {
+    background-color: #252525;
+    border-radius: .7rem;
+    overflow: hidden;
+    flex-wrap: wrap;
+    color: #FFFFFF;
+    height: 35rem;
+    
+}
+/* Style for images in the gallery */
+.blog-post:hover{
+    transition: box-shadow 0.3s ease, transform 0.5s ease; 
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+.blog-post:hover{
+    box-shadow: 0 0 0 0.1em #ffffff; /* Create a border-like effect outside the image */
+
+}
+.blog-post-info {
+    padding: 0 1rem;
+    margin: 0;
+    height: 30%;
+    text-align: left;
+    display: flex;
+    
+    flex-direction: column; /* Ensure elements are stacked vertically */
+    justify-content: center; /* Vertically center the content */
+    transform: translate(0, -.3rem)
+}
+
+
+
+.blog-post-image {
+    width: 100%;
+    height: 70%; /* The container height */
+    background-color: #494949; /* Fallback color */
+    overflow: hidden; /* Ensures the image doesn't overflow the container */
+    position: relative;
+}
+
+
+.blog-post-divider{
+    height: 3px;
+    background-color: #782C2C;
+}
+
+.blog-post h2 {
+    font-size: 2rem;
+    margin: 0;
+    font-weight: bold;
+    text-transform: uppercase;
+    overflow: hidden; /* Hide overflow text */
+    white-space: nowrap; /* Prevent text from wrapping to the next line */
+    text-overflow: ellipsis; /* Show ellipsis when text is truncated */
+    max-width: 100%; /* Adjust as needed or set a specific width */
+}
+
+
+.blog-post p {
+    margin: 0 ;
+    margin-top: .2rem;
+    font-size: 1.2rem;
+}
+#clear-button:hover span{
+    display: none;
+}
+
+#clear-button:hover:before {
+    content: "⛔ CLEAR TAGS?";
+}
+
+#clear-button:hover{
+    cursor: help !important; /* Change cursor to pointer on hover */
+}
+.tags-container img {
+    width: 1.5rem;
+}
+
+.tags-container img {
+    width: 1.5rem;
+    height: auto; /* Maintain aspect ratio */
+}
+
+.tags-container span {
+
+    margin: 0;
+    margin-left: .5rem;
+}
+
+.tags-container .tag {
+    font-size: 1.2rem;
+    display: inline-flex; /* Flexbox for horizontal alignment */
+    align-items: center; /* Center content vertically */
+    
+    text-transform: uppercase;
+    width: auto;
+    background: #252525;
+    margin-top: .6rem;
+    margin-left: 0;
+    margin-right: .5rem;
+    padding: .5rem 1rem;
+    border: 0.1rem solid #444;
+    border-radius: 0.4rem;
+    height: 2.2rem;
+    transition: background 0.2s;
+}
+
+.tag-button:hover{
+    background: #782c2c; /* Change background color on hover for feedback */
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+
+.tag-button.active {
+    background: #782c2c; /* Change background color on hover for feedback */
+}
+
+/* Styles for the button */
+.tag-button {
+    display: inline-flex; /* Flexbox for horizontal alignment */
+    align-items: center; /* Center content vertically */
+    text-transform: uppercase;
+    width: auto;
+    background: #252525;
+    font-size: 1.2rem;
+    color: #FFFFFF;
+    padding: .5rem 1rem;
+    border: 0.1rem solid #444;
+    border-radius: 0.4rem;
+    transition: background 0.2s;
+    height: 2.2rem;
+    
+}
+
+#tag-container .tag{
+    margin: 0rem;
+}
+#tag-container{
+    display: flex;
+    align-items: center;
+    column-gap: 1rem;
+    row-gap: 1rem;
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    
+}
+
+.horizontal1{
+
+
+    width: .1rem; /* Set the width to 10% */
+    height: 3rem;
+    background-color: #444444;
+
+
+
+}
+.tag-button i {
+    margin-left: .5rem; /* Space between text and icon */
+}
+
+
+
+
+/* Styling for the dropdown */
+.dropdown-button {
+    position: relative; /* Position relative for dropdown placement */
+    display: inline-block; /* Keep button inline */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    font-size: 1.6rem;
+}
+.dropdown-content h1{
+    font-size: 1.6rem;
+    text-align: start;
+    margin: 0;
+    margin-bottom: .5rem;
+}
+.dropdown-content {
+    display: none; /* Hide the dropdown initially */
+    position: absolute; /* Position absolutely relative to the dropdown button */
+    background-color: #0c0c0c; /* Background color */
+    width: 10%; /* Width of the dropdown */
+    gap: 1rem; /* Space between items */
+    z-index: 1; /* Keep it on top of other elements */
+    
+    top: 100%; /* Position dropdown directly below the button */
+    right: 0; /* Align the right edge of the dropdown with the right edge of the button */
+    padding: 1rem; /* Add padding for better spacing */
+    border-radius: 0.4rem; /* Rounded corners for dropdown */
+    cursor: auto;
+}
+
+/* Show dropdown on hover */
+.dropdown-button:hover .dropdown-content {
+    display: flex; /* Show dropdown on hover */
+
+}
+
+.tag-item {
+    display: flex; /* Use flex for tag items for better alignment */
+    align-items: center; /* Center content vertically */
+    text-transform: uppercase; /* Uppercase text */
+    width: auto; /* Auto width */
+    background: #252525; /* Background color for tags */
+    color: #FFFFFF; /* Text color */
+    padding: .5rem 1rem; /* Padding */
+    border: 0.1rem solid #444; /* Border styling */
+    border-radius: 0.4rem; /* Rounded corners */
+    
+    transition: background 0.2s; /* Transition effect */
+    height: 2.2rem; /* Fixed height */
+    font-size: 1.2rem;
+    cursor: pointer;
+    margin-bottom: 0.5rem; /* Add space between each tag */
+}
+
+.tag-item p{
+    margin-right: .5rem;
+}
+/* Optional: Remove margin for the last tag to avoid extra space */
+.tag-item:last-child {
+    margin-bottom: 0; /* Remove bottom margin for the last item */
+}
+
+
+/* Optional: Hover effect for tag items */
+.tag-item:hover {
+    background: #782c2c; /* Change background on hover for better visibility */
+    
+}
+
+
+.tag-item.active {
+    background: #782c2c; /* Change background color on hover for feedback */
+}
+
+.intro-text h1 {
+    font-family: 'Gothic Bold', sans-serif;
+    font-size: 5rem;
+    margin: 0;
+    text-align: left;
+
+    line-height: 1;
+    color: #ffffff;
+}
+
+.intro-text p {
+    font-family: 'Gothic', sans-serif;
+    font-size: 1.8rem;
+    margin: 0;
+    line-height: 1.5;
+    color: #d4d4d4;
+
+}
+
+#gallery {
+
+    width: 100%;
+
+
+    
+}
+
+@media only screen and (min-width: 1280px) {
+    /* Target the body element */
+    body {
+        padding-left: max(5rem, calc(50% - 640px));
+        padding-right: max(5rem, calc(50% - 640px));
+        background-color: rgba(0, 0, 0, 1);
+    }
+    
+
+}
+@media only screen and (max-width: 630px) {
+    .Bans {
+        display: none;
+
+    }
+
+}
+@media only screen and (max-width: 780px) {
+    html {
+        font-size: 55.5%;
+    }
+
+    .intro-container {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+
+    }
+    
+    .profile-picture img {
+        width: 15rem; /* Adjust size for smaller screens */
+    }
+
+    #post-container {
+
+        grid-template-columns: repeat(2, 1fr);
+
+
+    }
+}
+
+@media only screen and (max-width: 350px) {
+
+    .header-content .fa-solid.fa-caret-down {
+        display: none;
+    }
+    
+
+
+
+}
+
+@media only screen and (max-width: 440px) {
+
+    .header-content img {
+        display: none;
+    }
+
+    #post-container {
+
+        grid-template-columns: repeat(1, 1fr);
+    
+    }
+
+    .header-content  {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .header {
+        align-items: center;
+        justify-content: center;
+    }
+}

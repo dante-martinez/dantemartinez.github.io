@@ -1,0 +1,83 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ban's | Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="../images/logo/banfavicon.ico">
+
+    <link rel="stylesheet" href="../css/blog.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    
+
+</head>
+<body>
+    <!-- HEADER -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <header id="header">
+
+    </header>    
+    <script type="text/JavaScript">
+        $( "#header" ).load( "./pages/extra/header.html" )
+    </script>
+
+    <!-- BLOG -->
+    <div class="wrapper">
+        <div class="intro-container">
+            <div class="intro-text">
+                <h1>MEDIA BLOGPOST</h1>
+            </div>
+            <div class="search-container">
+                <i class="fa-solid fa-magnifying-glass search-icon"></i> <!-- FontAwesome icon -->
+                <input type="text" id="search-bar" placeholder="Search">
+            </div>
+            <div id="tag-container" class="tags-container">
+                <div id="clear-button" class="tag-button"><span>🏷️ TAGS</span></div>
+                <div class="horizontal1"></div>
+
+
+            </div>
+            
+
+        </div>
+        
+
+
+
+
+
+        <div class="divider1"></div>
+        <div id="gallery">
+            
+            <main id="post-container"></main>
+            <script src="../images/blogposts/blogPosts.js" type="module"></script>
+        </div>
+        <div class="divider1"></div>
+
+        <div class="pagination">
+            <button class="page-btn" onclick="goToPage(1)">
+                <i class="fas fa-angle-double-left"></i> <!-- Font Awesome double left arrow -->
+            </button>
+            <div id="pagination-numbers"></div> <!-- Numbers dynamically injected here -->
+            <button class="page-btn" onclick="goToPage(lastPage)">
+                <i class="fas fa-angle-double-right"></i> <!-- Font Awesome double right arrow -->
+            </button>
+        </div>
+        
+        
+        
+          
+    </div>
+    
+    <!-- FOOTER -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <footer id="footer">
+
+    </footer>    
+    <script type="text/JavaScript">
+        $( "#footer" ).load( "./pages/extra/footer.html" )
+    </script>
+
+</body>
+</html>

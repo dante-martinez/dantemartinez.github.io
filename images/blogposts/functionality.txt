@@ -1,0 +1,69 @@
+blogposts.js will handle the main functionality of all of the code,  
+
+posts are stored into the posts folder
+each post has its own folder & its own content
+every post is labeled as blogpost_#, this is used later for sorting them
+
+inside the post folder, there is post.js and another folder named media, in media all of the content such as images or gifs are placed
+
+in post.js the actual "template" of the post is listed, this is an example of what it looks like:
+const blogpost = {
+    BlogPostThumbnail: {
+        title: "Eastern Front Thumbnail",
+        date: "September 15, 2024",
+        thumbnail: "../media/image (1).png",
+        tags: "Graphic Design"
+    },
+        
+
+    PostContent: {
+        H1: "MORBI VITAE LOREM AT ARCU SUSCPIT",
+        H2: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus faucibus arcu sit amet tempor. Phasellus pellentesque enim turpis, nec pulvinar nibh congue a. Aenean consectetur auctor leo vitae pharetra. Quisque sollicitudin, sem ac fringilla hendrerit, sapien lorem volutpat orci.",
+        BLOCK_7: {
+            IMG:"../media/image (1).png",
+            H3: "Cras a eros lorem. Donec mollis, orci ac posuere rutrum."
+        },
+        DIV,
+        H2:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus faucibus arcu sit amet tempor. Phasellus pellentesque enim turpis, nec pulvinar nibh congue a. Aenean consectetur auctor leo vitae pharetra.",
+        SPACE,
+        H2:"Quisque sollicitudin, sem ac fringilla hendrerit, sapien lorem volutpat orci, eget feugiat purus urna eu libero. Cras a eros lorem. Donec mollis, orci ac posuere rutrum, ligula mauris consequat mi, non suscipit massa lorem in turpis.",
+        SPACE,
+        H2:"Morbi vehicula, nunc euismod hendrerit posuere, metus est lobortis felis, ac ultrices leo nulla non purus. Nam vitae nisi venenatis, luctus erat quis, fermentum dui. Morbi vitae lorem at arcu suscipit eleifend eu nec mauris. Curabitur vulputate tincidunt risus, vel aliquet ex volutpat vitae. Vivamus dignissim iaculis magna eget ultricies. Aenean nec nisi diam. Ut quam tellus, bibendum sit amet ullamcorper sollicitudin, ultricies sit amet nulla.",
+        SPACE,
+        H2:"Aenean vel dolor a risus dictum accumsan id eu lacus. Aliquam at tellus convallis, viverra turpis quis, vestibulum mauris. Nam ut purus ligula.",
+        DIV,
+    }
+
+
+};
+
+export default blogpost;
+
+its all pretty straight forward, block "BLOCK_7" there are multiple different types of blocks (reffer to the appended image as a reference) and basically its just the style the CSS is made in so its very important to make sure that each has a property to do so
+
+Anyways, all of these are gathered together in blogposts.js and basically they are sorted as largest to smallest in the order of it. Content is stored on the page with a max of 9 per page, so a pagelist system will have to be created to do so.
+
+when the user clicks on any of the posts it will open a new page and send them to the blog post that is created when done so, it has to be modular so i dont have to create a full html page for every single post.
+
+on the blogpost at the bottom there will be two arrows, too on the left and right of them, this is done to go to a earlier or later post (example if its in post 5 then if you click on the right arrow it will send you to post 4, and if you click on the left to post 3), again this also needs to be done so if there is no alter post or earlier post then the function wont run
+
+next, the search bar on the main html page, the user is able to search posts with the search bar by name, as well as use tags that are displayed bellow the search bar, all they have to do to filter by tag is press the tag they want and it will filter the contents automatically, if the search bar is blank then it will jsut search the posts with that tag, you can also search by tag on the search bar by putting #tag-name, this is done automatically if the user clicks on a tag on a blogpost thumbnail (as they are displayed there as well)
+
+
+-------------------------------
+
+create "no content exists or whatever"
+add limit on tags based on scale? (im not sure how yet) (+2)
+fix text formatting for title if the thing is too big it looks weird, probably use truncate LOG ASS WO.. or something
+fix scaling for all tags, probably make them bigger cuz hard to read
+
+make a style guide with standardized font sizes
+
+footer on all web pages
+redo header on all pages
+
+redo text formatting on all pages (now from left to right)
+
+
+
+

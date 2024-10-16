@@ -1,0 +1,470 @@
+@font-face {
+    font-family: 'Gothic Bold';
+    src: url('../fonts/centurygothic_bold.ttf');
+}
+
+@font-face {
+    font-family: 'Gothic';
+    src: url('../fonts/centurygothic.ttf');
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: #ff0000;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    min-height:100%;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Gothic', sans-serif ;
+
+}
+
+
+
+/* Wrapper Styling */
+.wrapper {
+    background-color: #1c1c1c;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    width: 100%; /* Ensure the wrapper covers the full width */
+    
+    overflow-x: hidden; /* Prevent horizontal overflow */
+}
+
+
+
+
+
+
+
+
+/* Dropdown styles */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #232324;
+    min-width: 20rem;
+    box-shadow: 0px 0.8rem 1.6rem 0px rgba(0,0,0,0.5);
+    z-index: 1;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 1rem;
+    text-decoration: none;
+    display: flex; /* Ensure horizontal alignment */
+    align-items: center; /* Vertically center content */
+    text-align: left;
+    white-space: nowrap; /* Prevent text wrapping */
+}
+
+.dropdown-content a img {
+    height: 2rem; /* Adjust the height of the icon */
+    width: auto;  /* Maintain aspect ratio */
+    margin-right: 1rem; /* Space between image and text */
+    flex-shrink: 0; /* Prevent the image from shrinking */
+}
+
+.dropdown-content a:hover {
+    color: #ddd; /* Text color changes on hover */
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav a, span {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 1rem;
+    font-family: 'Gothic';
+    font-size: 1rem;
+}
+
+#current {
+    font-family: "Gothic Bold";
+}
+
+nav a:hover {
+    color: #d4d4d4;
+}
+
+
+
+
+
+.intro-container {
+
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1em;
+    margin-bottom: 2rem;
+}
+
+.profile-picture img {
+    width: auto;
+    height: 90%;
+    border-radius: 50%; /* Optional, for a circular image */
+}
+
+.intro-text {
+    text-align: center;
+
+    padding: 0 2.0rem; 
+    color: #ffffff;
+}
+
+.intro-text h1 {
+    font-family: 'Gothic Bold', sans-serif;
+    font-size: 3.5em;
+    margin-bottom: 2.0rem;
+    color: #ffffff;
+}
+
+.intro-text p {
+    font-family: 'Gothic', sans-serif;
+    font-size: 1.8em;
+    line-height: 1.5;
+    color: #d4d4d4;
+}
+
+li.spacer {
+    display: inline-block;
+    height: 0;
+    margin: 0;
+    padding: 0;
+}
+
+
+.social-media-links {
+    display: flex;
+    grid-template-columns: 60px 60px;
+    font-size: 1.6rem;
+
+    justify-content: center; /* Centers the grid horizontally */
+    align-items: center;     /* Centers the grid items vertically */
+   
+}
+
+.social-media-links a {
+    
+    
+    color: #ffffff;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+.custom-icon {
+    width: 1em;
+    height: 1em;
+    color: #ffffff;
+    vertical-align: middle;
+    margin-right: 1px;
+    position: relative;
+    top: -0.1rem
+    
+}
+
+.social-media-links a:hover .custom-icon {
+    filter: brightness(75%)
+}
+
+.social-media-links a:hover {
+    color: #d4d4d4;
+    
+}
+
+#portfolio {
+    padding-bottom: 15px;
+}
+
+#portfolio img {
+    width: 100%;
+
+    height: auto;
+    border-radius: 5px;
+    
+}
+
+#gallery {
+    text-align: center;
+}
+
+.gallery-grid-thumb {
+
+
+
+
+
+
+    margin: 0 auto;
+}
+
+.gallery-grid-thumb img {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+
+    object-fit: fill;
+    gap: .5rem;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 1.5rem;
+
+    margin: 0 auto;
+}
+
+.gallery-item img {
+    width: 100%;
+
+    object-fit: cover;
+    border-radius: 5px;
+    object-fit: s;
+}
+
+
+
+/* Divider Bar Styles */
+.divider1 {
+    border-top: 0.3rem solid #782c2c; /* Color and thickness of the line */
+    margin: 0px auto; /* Center the divider with auto margins */
+    width: 100%; /* Set the width to 10% */
+    display: block; /* Ensures the bar is a block element */
+    position: relative; /* Allows for positioning if needed */
+
+}
+
+
+/* Divider Bar Styles */
+.divider2 {
+    border-top: 0.3rem solid #782c2c; /* Color and thickness of the line */
+    margin: 0px auto; /* Center the divider with auto margins */
+    width: 100%; /* Set the width to 10% */
+    display: block; /* Ensures the bar is a block element */
+    position: relative; /* Allows for positioning if needed */
+
+    margin-bottom: 3rem;
+}
+
+.divider3 {
+    border-top: 0.3rem solid #782c2c; /* Color and thickness of the line */
+    margin: 0px auto; /* Center the divider with auto margins */
+    width: 100%; /* Set the width to 10% */
+    display: block; /* Ensures the bar is a block element */
+    position: relative; /* Allows for positioning if needed */
+
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+
+
+
+
+
+
+
+
+
+.skills-list ul, .software-list ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+
+    padding: 0; 
+    list-style-type: none; 
+
+    flex: 0 2 auto; /* Allow items to shrink and grow based on content */
+
+
+}
+
+.skills-list li, .software-list li {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background: #252525;
+    border: 0.1rem solid #444;
+    border-radius: 0.4rem;
+    padding: 5px;
+    margin: 0 1rem 1rem 0; /* Space between items */
+    transition: background 0.5s;
+    position: relative; /* Make the parent element relative */
+    text-align: left;
+    overflow: hidden;
+    white-space: nowrap; /* Keep text in a single line */
+}
+
+.spacer {
+    background-color: transparent !important;
+}
+
+
+.skills-list li:hover, .software-list li:hover {
+    background: #333;
+    transform: scale(1.01);
+    
+}
+
+.skills-section {
+    text-align: left;
+
+    margin: 0 auto;
+    padding: 1rem 0;
+    
+}
+
+.skills-section h2 {
+    font-family: 'Gothic Bold', sans-serif;
+    font-size: 2.8rem;
+    color: #FFFFFF;
+    margin: 0;
+    line-height: 1;
+}
+
+.skills-section h3 {
+    font-family: 'Gothic', sans-serif;
+    font-weight: normal;
+    font-size: 1.8rem;
+    line-height: 1;
+    color: #d4d4d4;
+    margin: 1rem 0 1rem;
+
+    
+}
+
+.skills-list, .software-list {
+    display: block;
+    flex-wrap: wrap;
+
+    padding: 0;
+    list-style-type: none;
+    
+}
+
+/* Style for images in the gallery */
+#gallery img, #portfolio img:hover {
+    transition: box-shadow 0.3s ease, transform 0.5s ease; 
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+/* Hover effect for images */
+#gallery img:hover, #portfolio img:hover {
+    box-shadow: 0 0 0 0.1em #ffffff; /* Create a border-like effect outside the image */
+    transform: scale(1.001);
+
+}
+
+.gallery-grid-thumb h2 {
+    font-family: 'Gothic Bold', sans-serif;
+    font-size: 28px;
+    color: #FFFFFF;
+    line-height: 0.5;
+    text-align: left;
+
+}
+
+.gallery-grid-thumb h3 {
+    margin-top: -8px;
+    font-family: 'Gothic', sans-serif;
+    font-weight: normal;
+    font-size: 1.8rem;
+    line-height: 1.5;
+    color: #d4d4d4;
+    text-align: left;
+
+}
+
+
+/* SKILL LIST */
+.skills-list li span, .software-list li span {
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.years-text {
+    display: none;
+    position: absolute;
+    text-align: center;
+    color: #ffffff;
+    font-family: "Gothic Bold";
+    z-index: 1.5;
+}
+
+.skills-list li:hover, .software-list li:hover {
+    background: #782c2c;
+}
+
+.skill-text {
+    font-size: 1.4rem;
+}
+
+.skills-list li:hover .years-text, .software-list li:hover .years-text {
+    display: block;
+    color: #d4d4d4;
+}
+
+.software-list li:hover span:not(.years-text) {
+    opacity: 1;
+}
+
+.skill-icon, .software-icon {
+    width: 3rem;
+    height: 3rem;
+    margin-right: 0px;
+}
+
+/* MEDIA QUERIES */
+@media only screen and (min-width: 1280px) {
+    body {
+        padding-left: max(5rem, calc(50% - 640px));
+        padding-right: max(5rem, calc(50% - 640px));
+        background-color: rgba(0, 0, 0, 1);
+    }
+}
+
+@media only screen and (max-width: 780px) {
+    html {
+        font-size: 55.5%;
+    }
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr) ;
+    }
+    .intro-container {
+        flex-direction: column; 
+    }
+    .profile-picture img {
+        width: 15rem;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    .gallery-grid {
+        grid-template-columns: repeat(1, 1fr) ;
+    }
+}

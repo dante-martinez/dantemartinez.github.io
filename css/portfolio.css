@@ -1,0 +1,342 @@
+@font-face {
+    font-family: 'Gothic Bold';
+    src: url('../fonts/centurygothic_bold.ttf');
+}
+
+@font-face {
+    font-family: 'Gothic';
+    src: url('../fonts/centurygothic.ttf');
+}
+
+
+
+/* Comment */
+
+#current {
+    font-family: "Gothic Bold";
+}
+
+/* HTML and Body */
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: #ff0000;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    min-height:100%;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Gothic', sans-serif ;
+
+}
+
+/* General Header Styles */
+header {
+    width: 100%;
+    height: 6rem;
+    background-color: #752b2b;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center content horizontally */
+    text-align: center;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    width: 100%; /* Ensure the content takes up full width */
+    box-sizing: border-box;
+}
+
+.header-content a {
+    font-size: 1.6rem;
+}
+
+.Bans {
+    font-size: 1.6rem;
+    font-weight: normal;
+    text-align: center;
+}
+
+.logo img {
+    width: 5rem;
+    height: auto;
+}
+
+
+/* Wrapper Styling */
+.wrapper {
+    background-color: #1c1c1c;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    width: 100%; /* Ensure the wrapper covers the full width */
+    padding-top: .6rem;
+    overflow-x: hidden; /* Prevent horizontal overflow */
+}
+
+/* Dropdown styles */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #232324;
+    min-width: 20rem;
+    box-shadow: 0px 0.8rem 1.6rem 0px rgba(0,0,0,0.5);
+    z-index: 1;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 1rem;
+    text-decoration: none;
+    display: flex; /* Ensure horizontal alignment */
+    align-items: center; /* Vertically center content */
+    text-align: left;
+    white-space: nowrap; /* Prevent text wrapping */
+}
+
+.dropdown-content a img {
+    height: 2rem; /* Adjust the height of the icon */
+    width: auto;  /* Maintain aspect ratio */
+    margin-right: 1rem; /* Space between image and text */
+    flex-shrink: 0; /* Prevent the image from shrinking */
+}
+
+.dropdown-content a:hover {
+    color: #ddd; /* Text color changes on hover */
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav a, span {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 1rem;
+    font-family: 'Gothic';
+    font-size: 1rem;
+}
+
+#current {
+    font-family: "Gothic Bold";
+}
+
+nav a:hover {
+    color: #d4d4d4;
+}
+
+
+
+/* Divider Bar Styles */
+.divider1 {
+    border-top: 0.3rem solid #782c2c; /* Color and thickness of the line */
+    margin: 0px auto; /* Center the divider with auto margins */
+    width: 100%; /* Set the width to 10% */
+    display: block; /* Ensures the bar is a block element */
+    position: relative; /* Allows for positioning if needed */
+
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+
+
+
+
+.intro-text h1 {
+    color: #FFFFFF;
+    font-family: "Gothic Bold";
+    text-align: left;
+    margin: 0;
+
+    font-size: 5rem;
+    text-transform: uppercase;
+}
+
+.intro-text p {
+    color: #FFFFFF;
+    margin: 0;
+
+    text-align: left;
+    font-size: 1.8rem;
+}
+
+
+
+#gallery {
+    transform: translateY(-2rem);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 4rem;
+}
+
+#gallery img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+    border: none;
+    display: block;
+}
+
+.image-container {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+
+    border: none;
+    display: block;
+}
+
+.image-container iframe {
+    position: absolute;
+    border: none;
+    transform: translate(-50%, -50%);
+}
+
+/* Lightbox default hidden state */
+.lightbox {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1001; /* Ensure it stays above all other content */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9); /* Dark background */
+    align-items: center;
+    justify-content: center;
+}
+
+/* Style for the close button */
+.lightbox-close {
+    position: absolute;
+    top: 2rem;
+    right: 3.5rem;
+    color: white;
+    font-size: 4rem;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 1002;
+}
+
+/* Style for the image in the lightbox */
+.lightbox-content {
+    max-width: 90%;
+    max-height: 80%;
+    
+}
+
+/* Add these styles to your existing CSS file */
+
+/* Style for images in the gallery */
+#gallery img, .image-container img {
+    transition: box-shadow 0.3s ease;
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+/* Hover effect for images */
+#gallery img:hover, .image-container img:hover {
+    box-shadow: 0 0 0 0.1rem #ffffff; /* Create a border-like effect outside the image */
+
+}
+
+
+@media only screen and (min-width: 1280px) {
+    /* Target the body element */
+    body {
+        padding-left: max(5rem, calc(50% - 640px));
+        padding-right: max(5rem, calc(50% - 640px));
+        background-color: rgba(0, 0, 0, 1);
+    }
+    
+
+}
+@media only screen and (max-width: 630px) {
+    .Bans {
+        display: none;
+
+    }
+    .intro-text h1,.intro-text p {
+        text-align: center;
+
+    }
+    
+}
+@media only screen and (max-width: 780px) {
+    html {
+        font-size: 55.5%;
+    }
+
+    .intro-container {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+
+    }
+    
+    .profile-picture img {
+        width: 15rem; /* Adjust size for smaller screens */
+    }
+
+
+}
+
+@media only screen and (max-width: 350px) {
+
+    .header-content .fa-solid.fa-caret-down {
+        display: none;
+    }
+    
+
+
+
+}
+
+@media only screen and (max-width: 440px) {
+
+    .header-content img {
+        display: none;
+    }
+
+        .intro-text h2{
+        text-align: center;
+    }
+
+    .header-content  {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .header {
+        align-items: center;
+        justify-content: center;
+    }
+}

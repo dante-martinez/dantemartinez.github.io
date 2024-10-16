@@ -1,0 +1,231 @@
+/* FONTS */
+@font-face {
+    font-family: 'Gothic Bold';
+    src: url('../fonts/centurygothic_bold.ttf');
+}
+
+@font-face {
+    font-family: 'Gothic';
+    src: url('../fonts/centurygothic.ttf');
+}
+
+@font-face {
+    font-family: 'Gothic Bold Italic';
+    src: url('../fonts/centurygothic_bold_italic.ttf');
+}
+
+@font-face {
+    font-family: 'Gothic Italic';
+    src: url('../fonts/centurygothic_italic.ttf');
+}
+
+/* GENERAL STYLING */
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: #1c1c1c;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    min-height: 100%;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Gothic', sans-serif;
+}
+
+/* PAGINATION */
+.pagination {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #232323;
+}
+
+.page-btn {
+    background-color: #252525;
+    color: #ffffff;
+    
+    width: 4rem; /* Set button width to 4rem (40px) */
+    height: 4rem; /* Set button height to 4rem (40px) */
+    
+    display: flex; /* Flexbox to center content */
+    justify-content: center;
+    align-items: center;
+    
+    margin: 1rem;
+    border: 0.1rem solid #444;
+    border-radius: 0.4rem;
+    
+    cursor: pointer;
+    padding: 0; /* Remove padding since width and height are fixed */
+}
+
+.icon {
+    width: 22px; /* Icon size */
+    height: 22px; /* Icon size */
+}
+
+.page-btn:hover {
+    background-color: #555;
+}
+
+.page-btn.active {
+    background-color: #4287f5;
+    font-weight: bold;
+}
+
+.page-btn:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+}
+
+
+/* WRAPPER STYLING */
+.wrapper {
+    background-color: #1c1c1c;
+    padding: 2rem;
+    padding-top: 0.6rem;
+    box-sizing: border-box;
+    text-align: center;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+
+#current {
+    font-family: "Gothic Bold";
+}
+
+
+
+/* POST CONTENT STYLING */
+#post-content .BLOCK_1 img {
+    width: 100%;
+}
+
+#post-content .BLOCK_1 .PI {
+    margin: 0;
+    text-align: center;
+    margin-top: 1.4rem;
+}
+
+#post-content h1 {
+    color: #FFFFFF;
+    font-family: "Gothic Bold";
+    text-align: left;
+    margin: 0;
+    margin-bottom: 0.5rem;
+    font-size: 2.4rem;
+}
+
+#post-content p {
+    color: #FFFFFF;
+    margin: 0;
+    margin-bottom: 2rem;
+    text-align: left;
+    font-size: 1.8rem;
+}
+
+#post-content .PI {
+    opacity: 50%;
+    font-family: "Gothic Italic";
+    font-size: 1.8rem;
+}
+
+/* DIVIDER */
+#post-content .divider {
+    border-top: 0.3rem solid #782c2c;
+    margin: 0px auto;
+    width: 100%;
+    display: block;
+    position: relative;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+/* INTRO CONTAINER */
+.intro-container h1 {
+    color: #FFFFFF;
+    font-family: "Gothic Bold";
+    text-align: left;
+    margin: 0;
+    font-size: 5rem;
+    text-transform: uppercase;
+}
+
+.intro-container p {
+    color: #FFFFFF;
+    margin: 0;
+    text-align: left;
+    font-size: 1.8rem;
+}
+
+/* TAGS CONTAINER */
+.tags-container {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap; 
+}
+
+.tags-container img {
+    width: 1.5rem;
+    height: auto;
+}
+
+.tags-container span {
+    margin: 0;
+    margin-left: .5rem;
+}
+
+.tags-container .tag {
+    font-size: 1.4rem;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    background: #252525;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 0;
+    margin-top: 1rem;
+    margin-right: .5rem;
+    padding: 0.5rem 1rem; 
+    border: 0.1rem solid #444;
+    border-radius: 0.4rem;
+}
+
+/* DIVIDER */
+.divider1 {
+    border-top: 0.3rem solid #782c2c;
+    margin: 0px auto;
+    width: 100%;
+    display: block;
+    position: relative;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+/* MEDIA QUERIES */
+@media only screen and (min-width: 1280px) {
+    body {
+        padding-left: max(5rem, calc(50% - 640px));
+        padding-right: max(5rem, calc(50% - 640px));
+        background-color: rgba(0, 0, 0, 1);
+    }
+}
+
+@media only screen and (max-width: 780px) {
+    html {
+        font-size: 55.5%;
+    }
+    #post-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (max-width: 440px) {
+    #post-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
