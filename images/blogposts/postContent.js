@@ -1,7 +1,7 @@
 const loadPost = async (postId) => {
     try {
         // Import the specific post.js file based on the postId
-        const post = await import(`./blogposts/posts/${postId}/post.js`);
+        const post = await import(`./posts/${postId}/post.js`);
         const postContentDiv = document.getElementById('post-content');
         const introContainerDiv = document.querySelector('.intro-container');
 
