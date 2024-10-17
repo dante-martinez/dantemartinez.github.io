@@ -34,7 +34,7 @@ async function loadBlogPosts(searchTerm = '', tagFilter = []) {
 
     // Load posts
     for (let postIndex = 1; postIndex <= numberOfPosts; postIndex++) {
-        const postModule = await import(`./blogposts/posts/${postIndex}/post.js`);
+        const postModule = await import(`./posts/${postIndex}/post.js`);
         posts.push(postModule.default.BlogPostThumbnail);
     }
 
