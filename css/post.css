@@ -1,22 +1,22 @@
 /* FONTS */
 @font-face {
     font-family: 'Gothic Bold';
-    src: url('./fonts/centurygothic_bold.ttf');
+    src: url('../fonts/centurygothic_bold.ttf');
 }
 
 @font-face {
     font-family: 'Gothic';
-    src: url('./fonts/centurygothic.ttf');
+    src: url('../fonts/centurygothic.ttf');
 }
 
 @font-face {
     font-family: 'Gothic Bold Italic';
-    src: url('./fonts/centurygothic_bold_italic.ttf');
+    src: url('../fonts/centurygothic_bold_italic.ttf');
 }
 
 @font-face {
     font-family: 'Gothic Italic';
-    src: url('./fonts/centurygothic_italic.ttf');
+    src: url('../fonts/centurygothic_italic.ttf');
 }
 
 /* GENERAL STYLING */
