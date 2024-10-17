@@ -201,6 +201,5 @@ document.addEventListener('DOMContentLoaded', function () {
     populateCategorizedList(categorizedSkills, 'skills-list');
 
     populateCategorizedList(categorizedSoftware, 'software-list');
-    //highlightLastItemOnExpand('skills-list'); // 'skills-list' should be the ID of your row container
 
 });
