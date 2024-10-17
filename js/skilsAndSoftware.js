@@ -199,7 +199,6 @@ function highlightIfExceeds(containerId, paddingMarginIncluded = true) {
 document.addEventListener('DOMContentLoaded', function () {
 
     populateCategorizedList(categorizedSkills, 'skills-list');
-
     populateCategorizedList(categorizedSoftware, 'software-list');
 
 });

@@ -26,7 +26,7 @@ const loadPost = async (postId) => {
 
             // Tags
             const tagsElement = document.createElement('div');
-            tagsElement.className = 'tags-container'; // Add a class for CSS styling
+            tagsElement.className = 'tags-container'; // Add a class for CSS 
             BlogPostThumbnail.tags.forEach(tag => {
                 const tagSpan = document.createElement('span');
                 tagSpan.className = 'tag';
