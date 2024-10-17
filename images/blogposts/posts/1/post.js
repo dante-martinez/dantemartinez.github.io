@@ -3,7 +3,7 @@ const blogpost = {
         title: "TAG TEST",
         date: "📅 September 1, 2024",
         thumbnail: "1.png",
-        tags: ["3D GRAPHICS","PROGRAMMING","PROGRAMMING","MODELING"]
+        tags: ["3D GRAPHICS","PHOTOGRAPHY"]
     },
         
 

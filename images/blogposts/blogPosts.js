@@ -106,12 +106,12 @@ function displayPosts(postsChunk) {
 
         // Add icons to valid tags from the `tags` object
         post.tags.forEach(tag => {
-            if (tags[tag]) {  // Check if the tag exists in the `tags` object
+            if (allTags[tag]) {  // Check if the tag exists in the `tags` object
                 const tagElement = document.createElement('div');
                 tagElement.classList.add('tag');
 
                 const tagIcon = document.createElement('img');
-                tagIcon.src = tags[tag];  // Use the tag's image path
+                tagIcon.src = allTags[tag];  // Use the tag's image path
                 tagIcon.alt = tag;        // Set alt text for accessibility
 
                 const tagText = document.createElement('span');
